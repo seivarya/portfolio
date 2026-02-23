@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index | anshul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="dark-mode">
+
+    <div class="interactive-bg"></div>
+
+    <nav>
+        <div class="logo"><a href="index.html">Anshul Bisht</a></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Light Mode">☀️</button>
+        </div>
+    </nav>
+
+    <section class="hero reveal">
+        <div class="hero-content">
+            <h1>Video Editing & <br><span>Graphic Designs</span></h1>
+            <p>I craft awesome video edits, stunning graphic design, and charming designs to make your brand stand out.
+            </p>
+            <button class="cta-btn" onclick="window.location.href='contact.html'">Start a Project
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 5px;">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg></button>
+        </div>
+
+        <div class="cat-container">
+            <div class="cat-head">
+                <div class="cat-ear left"></div>
+                <div class="cat-ear right"></div>
+                <div class="cat-eye left"></div>
+                <div class="cat-eye right"></div>
+                <div class="cat-nose"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-avatar">
+                <img src="assets/self.png" width="200" height="200">
+            </div>
+            <div class="about-text">
+                <h3>Hi, I'm Anshul Bisht</h3>
+                <p>I'm a creative professional specializing in video editing, graphic design, and 3D prop design. I help
+                    brands and creators bring their ideas to life through visually engaging and high-quality content.
+                </p>
+                <p>From dynamic video edits and cinematic storytelling to eye-catching graphics and detailed 3D props, I
+                    focus on delivering work that is both creative and impactful. My goal is simple - to create visuals
+                    that make your brand stand out.</p>
+                <p>Let's build something amazing together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="reveal">
+        <h2>My Creations</h2>
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item vertical">
+                <a class="redirect-links" href="https://youtube.com/shorts/3EHSItzJmSI?feature=share">
+                    <video src="assets/prjct.prev/edu.video.mp4" class="portfolio-video" loop muted playsinline></video>
+                    <div class="portfolio-overlay">
+                        <h4>Edutainment Short</h4>
+                </a>
+                <span>Video Editing / Motion Graphics</span>
+            </div>
+        </div>
+
+        <div class="portfolio-item vertical">
+            <a class="redirect-links" href="https://youtube.com/shorts/u9eN_3GCKxU?feature=share">
+                <video src="assets/prjct.prev/bday.video.mp4" class="portfolio-video" loop muted playsinline></video>
+                <div class="portfolio-overlay">
+                    <h4>Birthday Celebration</h4>
+            </a>
+            <span>Video Editing / Events</span>
+        </div>
+        </div>
+
+        <div class="portfolio-item vertical">
+            <a class="redirect-links" href="https://www.youtube.com/watch?v=pKFA73DI5-0">
+                <video src="assets/prjct.prev/fr.video.mp4" class="portfolio-video" loop muted playsinline></video>
+                <div class="portfolio-overlay">
+                    <h4>Fashion Reel</h4>
+                    <span>Video Editing / Social Media</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="portfolio-item vertical">
+            <a class="redirect-links" href="https://youtube.com/shorts/ZYO0dcZzldg?feature=share">
+                <video src="assets/prjct.prev/lng.video.mp4" class="portfolio-video" loop muted playsinline></video>
+                <div class="portfolio-overlay">
+                    <h4>Long-form Edit Snippet</h4>
+                    <span>Video Editing / YouTube</span>
+                </div>
+            </a>
+        </div>
+        <a class="redirect-links" href="https://youtube.com/shorts/8UPAK9wZlpQ?feature=share">
+            <div class="portfolio-item vertical">
+                <video src="assets/prjct.prev/rtf.video.mp4" class="portfolio-video" loop muted playsinline></video>
+                <div class="portfolio-overlay">
+                    <h4>Retro Tech Reel</h4>
+                    <span>Video Editing / VFX</span>
+                </div>
+            </div>
+        </a>
+
+        <div class="portfolio-item vertical">
+            <a class="redirect-links" href="https://youtu.be/bIbsOEWgN1A">
+                <video src="assets/prjct.prev/unc.video.mp4" class="portfolio-video" loop muted playsinline></video>
+                <div class="portfolio-overlay">
+                    <h4>Uncut Vlogs</h4>
+                    <span>Video Editing / Lifestyle</span>
+                </div>
+            </a>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Drop Me a Line </h2>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="hello@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" placeholder="Tell me about your idea..." required></textarea>
+                </div>
+                <button type="submit" class="cta-btn" style="margin-top: 10px;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; Anshul Bisht, <span id="currentYear"></span>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
